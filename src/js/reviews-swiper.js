@@ -1,30 +1,29 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const reviewsSwiper = () => {
   new Swiper('.swiper-reviews', {
     slidesPerView: 1,
+    centeredSlides: true,
     slidesPerGroup: 1,
     loop: false,
     grabCursor: true,
-    spaceBetween: 24,
-    speed: 800,
-    simulateTouch: true,
-    touchRatio: 1,
-    initialSlide: 0,
-    mousewheel: {
-      sensitivity: 0.5,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
+    pagination: {
+      type: 'bullets',
+      el: '.swiper-pagination',
+      clickable: true,
     },
+    spaceBetween: 20,
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
       1440: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
     },
   });
