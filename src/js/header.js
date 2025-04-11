@@ -1,29 +1,22 @@
 const mobileMenu = () => {
   const mobileMenuButton = document.querySelector('.header-nav-mobile-button');
   const mobileMenu = document.querySelector('.header-nav-mobile');
-  const mobileMenuButtonClose = document.querySelector(
-    '.header-nav-mobile-button-close'
-  );
   const mobileMenuItems = document.querySelectorAll('.header-nav-mobile-item');
-  const logo = document.querySelector('.header-logo');
+  const backdrop = document.querySelector('.header-nav-mobile');
 
   mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.add('is-open');
-    mobileMenuButton.style.display = 'none';
-    logo.style.display = 'none';
+    mobileMenu.classList.toggle('is-open');
   });
 
-  mobileMenuButtonClose.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-    mobileMenuButton.style.display = 'flex';
-    logo.style.display = 'flex';
+  backdrop.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('is-open')) {
+      mobileMenu.classList.remove('is-open');
+    }
   });
 
   mobileMenuItems.forEach(item => {
     item.addEventListener('click', () => {
       mobileMenu.classList.remove('is-open');
-      mobileMenuButton.style.display = 'flex';
-      logo.style.display = 'flex';
     });
   });
 };
