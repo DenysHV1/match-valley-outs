@@ -1,0 +1,29 @@
+.hero {
+  background-image: url(../img/hero/hero-bg-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 40px;
+  @media (min-width: 1440px) {
+    background-image: url(../img/hero/hero-bg-pc.jpg);
+    background-position: bottom;
+    height: 135vh;
+    margin-bottom: 80px;
+    margin-top: 108px;
+  }
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 56px;
+  padding-bottom: 89px;
+  @media (min-width: 1440px) {
+    padding-bottom: 68px;
+  }
+}

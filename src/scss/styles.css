@@ -1,0 +1,67 @@
+@import './reset.css';
+
+@import './header.css';
+@import './footer.css';
+@import './pages.css';
+
+@import './about-game.css';
+@import './benefits.css';
+@import './faq.css';
+@import './how-play.css';
+@import './gallery.css';
+@import './hero.css';
+@import './reviews.css';
+
+@import './cookies.css';
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: #0b0c0c;
+  font-weight: 400;
+  background: #fff;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.title-h2 {
+  font-family: 'Tilt Warp', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  background: linear-gradient(180deg, #0183ff 0%, #022bd1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

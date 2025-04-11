@@ -1,0 +1,120 @@
+.reviews {
+  margin-bottom: 80px;
+  scroll-margin-top: 110px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 120px;
+  }
+}
+
+.swiper-reviews {
+  overflow: visible !important;
+  display: flex;
+  max-width: 100%;
+  margin-left: 0 !important;
+  @media screen and (min-width: 1440px) {
+    max-width: 1048px;
+  }
+}
+
+.reviews_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 20px;
+  @media screen and (min-width: 1440px) {
+    gap: 48px;
+    padding: 0 128px;
+  }
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border: 1px solid #eeebee;
+  border-radius: 40px;
+  padding: 24px;
+  min-height: 275px;
+  box-shadow: 0 4px 16px 0 rgba(31, 29, 31, 0.23);
+  background-color: #fff;
+  @media screen and (min-width: 1440px) {
+    padding: 29px 38px;
+    min-height: 303px;
+  }
+}
+
+.swiper-slide-color {
+  background-color: #99daa8;
+}
+
+.swiper-slide-top-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.review-author-img {
+  width: 59px;
+  height: 59px;
+  min-width: 59px;
+  min-height: 59px;
+  overflow: hidden;
+  border-radius: 50%;
+  @media screen and (min-width: 1440px) {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    min-height: 75px;
+  }
+}
+
+.review-author-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  min-width: 184px;
+  max-width: 184px;
+  @media screen and (min-width: 1440px) {
+    min-width: 346px;
+    max-width: 346px;
+  }
+}
+
+.review-text > h3 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.review-text > p {
+  font-weight: 400;
+  font-size: 16px;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.stars {
+  width: 191px;
+  height: 35px;
+  margin: 0 auto;
+  @media screen and (min-width: 1440px) {
+    width: 211px;
+    height: 39px;
+  }
+}
