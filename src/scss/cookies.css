@@ -5,49 +5,33 @@
   transform: translate(-50%);
   z-index: 999;
   width: 100%;
-  box-shadow: inset 0 0 60px 0 rgba(255, 255, 255, 0.15);
-  background: #e7f9f5;
+  background: #0b0c0c;
 }
 
 .cookies-container {
-  padding: 40px 28px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 40px;
   @media screen and (min-width: 1440px) {
-    padding: 40px 108px;
-  }
-}
-
-.cookies-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 0.91667;
-  color: #000;
-  font-family: 'Lato', sans-serif;
-  @media screen and (min-width: 1440px) {
-    line-height: 0.61111;
-    font-size: 36px;
+    gap: 32px;
+    flex-direction: row;
   }
 }
 
 .cookies-text {
   width: 100%;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #000;
-  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
   @media screen and (min-width: 1440px) {
-    font-size: 24px;
-    width: 1217px;
+    text-align: left;
   }
 }
 
 .cookies-buttons {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,39 +39,45 @@
   gap: 16px;
   @media screen and (min-width: 1440px) {
     flex-direction: row;
-    justify-content: flex-start;
+    gap: 32px;
   }
 }
 
 .cookies-button {
-  width: 100%;
-  height: 45px;
-  border-radius: 8px;
+  width: 256px;
+  height: 55px;
+  border-radius: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-  transition: opacity 300ms ease;
-  @media screen and (min-width: 1440px) {
-    width: 269px;
-    height: 55px;
-  }
-}
-
-.cookies-button:hover {
-  opacity: 0.8;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
 }
 
 .cookies-accept-js {
-  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
+  color: #0b0c0c;
+  transition: all 0.3s ease;
+}
+
+.cookies-accept-js:hover {
+  background: linear-gradient(180deg, #0183ff 0%, #022bd1 100%);
+  color: #fff;
 }
 
 .cookies-decline-js {
-  box-shadow: 0 1px 3px 0 #004fb6;
-  border: 1px solid #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.cookies-decline-js:hover {
+  background: linear-gradient(180deg, #0183ff 0%, #022bd1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: #022bd1;
 }

@@ -1,96 +1,54 @@
 .page-title {
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: #000;
-  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  background: linear-gradient(180deg, #0183ff 0%, #022bd1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Tilt Warp', sans-serif;
+  margin-bottom: 20px;
   @media screen and (min-width: 1440px) {
-    margin-bottom: 48px;
-    font-size: 36px;
-    letter-spacing: 0.05em;
+    font-size: 48px;
   }
 }
 
-.page-section1 {
-  margin-bottom: 63px;
-  margin-top: 100px;
+.page-section {
+  margin-bottom: 40px;
+  margin-top: 120px;
   @media screen and (min-width: 1440px) {
-    margin-bottom: 93px;
-    margin-top: 190px;
-  }
-}
-
-.page-section2 {
-  margin-bottom: 55px;
-  margin-top: 80px;
-  @media screen and (min-width: 1440px) {
-    margin-bottom: 67px;
-    margin-top: 190px;
-  }
-}
-
-.page-section3 {
-  margin-bottom: 71px;
-  margin-top: 80px;
-  @media screen and (min-width: 1440px) {
-    margin-bottom: 48px;
-    margin-top: 190px;
+    margin-bottom: 80px;
+    margin-top: 160px;
   }
 }
 
 .page-text-content {
-  padding: 0 15px;
+  padding: 0 16px;
   @media screen and (min-width: 1440px) {
-    padding: 0 108px;
-  }
-}
-
-.page-h2-title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: #000;
-  @media screen and (min-width: 1440px) {
-    font-size: 36px;
+    padding: 0 160px;
   }
 }
 
 .page-h3-title {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  color: #000;
+  color: #0b0c0c;
   @media screen and (min-width: 1440px) {
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 .page-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: #000;
   @media screen and (min-width: 1440px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
-.page-text-bold {
-  font-weight: 700;
-}
-
 .page-text-margin {
-  margin-bottom: 16px;
-}
-
-.page-text-margin2 {
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .page-list-item-link {
@@ -98,33 +56,37 @@
   overflow-wrap: break-word;
   display: inline-block;
   max-width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #00f;
-  text-decoration: underline;
+  color: #0b0c0c;
   @media screen and (min-width: 1440px) {
     word-break: break-all;
     overflow-wrap: anywhere;
     display: inline;
     max-width: none;
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
 .page-list-item {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #000;
+  color: #0b0c0c;
   @media screen and (min-width: 1440px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
-.page-list-item-link2 {
-  text-decoration: underline;
-  white-space: nowrap;
+.page-h2-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #0b0c0c;
+  text-align: left;
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+  }
 }
