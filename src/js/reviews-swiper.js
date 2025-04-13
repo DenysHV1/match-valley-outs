@@ -1,6 +1,5 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-
 const reviewsSwiper = () => {
   new Swiper('.swiper-reviews', {
     slidesPerView: 1,

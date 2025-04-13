@@ -1,9 +1,7 @@
 @import './reset.css';
-
 @import './header.css';
 @import './footer.css';
 @import './pages.css';
-
 @import './about-game.css';
 @import './benefits.css';
 @import './faq.css';
@@ -11,7 +9,6 @@
 @import './gallery.css';
 @import './hero.css';
 @import './reviews.css';
-
 @import './cookies.css';
 
 :root {

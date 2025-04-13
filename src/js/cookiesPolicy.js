@@ -7,7 +7,6 @@ export const cookiePolicy = () => {
     modalEl.style.display = 'none';
     return;
   }
-
   btnEl1.addEventListener('click', () => {
     modalEl.style.display = 'none';
     localStorage.setItem('match-valley-status', JSON.stringify(true));

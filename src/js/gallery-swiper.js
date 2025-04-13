@@ -1,6 +1,5 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-
 const gallerySwiper = () => {
   new Swiper('.swiper-gallery', {
     slidesPerView: 1,
@@ -25,5 +24,4 @@ const gallerySwiper = () => {
     },
   });
 };
-
 export default gallerySwiper;
